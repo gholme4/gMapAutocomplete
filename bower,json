@@ -1,0 +1,30 @@
+{
+  "name": "gMapAutocomplete",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gholme4/gMapAutocomplete",
+  "authors": [
+    "George Holmes II <george@fissionstrategy.com>"
+  ],
+  "description": "A jQuery plugin that wraps Google's Places Autocomplete",
+  "main": "dist/gMapAutocomplete.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "google",
+    "map"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  }
+}

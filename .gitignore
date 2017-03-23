@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+*.sass-cache*
+*.log
+bower_components/
+vendor/.git
+/vendor/**/.git
