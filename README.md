@@ -1,6 +1,6 @@
 # jQuery gMapAutocomplete
 
-A [jQuery][jquery_site] based plug-in that wraps Google's Places Autocomplete
+A jQuery based plug-in that wraps Google's Places Autocomplete
 
 
 ## Usage
