@@ -17,7 +17,7 @@ $(input_selector).gMapAutocomplete(options);
 *	**selectors**
 	Object assigning address componemt values to inputs
 *	**callback**
-	Function that accepts one parameter, an object of address components
+	Function that fires on autocomplete place_changed event. Accepts one parameter, an object of address components. See https://developers.google.com/maps/documentation/geocoding/intro#Types for available address components
 
 
 #### Examples 

@@ -1,12 +1,8 @@
 // gMapAutocomplete.js
 
-
 (function($, window, document, undefined) {
 	'use strict';
 	$.fn.gMapAutocomplete = function( options ) {
-
-		
-		// https://developers.google.com/maps/documentation/geocoding/intro#Types
 
 		var defaultOptions = {
 			geolocate: true,
@@ -39,7 +35,6 @@
 			// fields in the form.
 			autocomplete.addListener('place_changed', function () {
 				var place = autocomplete.getPlace();
-				console.log(JSON.stringify(place, null, '\t'));
 
 				var addressComponents = {};
 				$.each(place.address_components, function(index, ele) {
@@ -52,10 +47,11 @@
 
 				populateFields(addressComponents);
 			});
+
+			return el;
 		}
 
 		function populateFields(addressComponents) {
-			console.log(addressComponents);
 			if ( addressComponents.hasOwnProperty("street_address") )
 			{
 				var address = addressComponents.street_address.long_name;
@@ -116,15 +112,13 @@
 						center: geolocation,
 						radius: position.coords.accuracy
 					});
-					console.log(geolocation);
 					autocomplete.setBounds(circle.getBounds());
 				});
 			}
 		}
 
-		init(this);
+		return init(this);
 
-		return this;
 	};
 
 	// node export
